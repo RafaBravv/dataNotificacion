@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { TouchableOpacity, Text, ActivityIndicator, View } from 'react-native';
-import { StyleButton } from '@/constants/estilosAuth';
+import { StyleButton } from '@/src/constants/estilosAuth';
 
 interface AuthButtonProps {
   title: string;

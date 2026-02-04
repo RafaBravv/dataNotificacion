@@ -4,8 +4,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { StyleWelcome } from '@/constants/estilosAuth';
-import { useAuth } from '@/contexts/AuthContext';
+import { StyleWelcome } from '@/src/constants/estilosAuth';
+import { useAuth } from '@/src/contexts/AuthContext';
 
 export const WelcomeScreen = () => {
   const { user, logout } = useAuth();

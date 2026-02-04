@@ -1,7 +1,7 @@
 // services/authService.ts
 // Servicio que simula autenticación (sin backend real)
 
-import { AuthCredentials, RegisterCredentials, User } from '@/types/authTypes';
+import { AuthCredentials, RegisterCredentials, User } from '@/src/types/authTypes';
 
 // Simula delay de red
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));

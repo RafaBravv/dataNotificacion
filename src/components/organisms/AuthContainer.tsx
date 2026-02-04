@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
-import { LoginForm } from '@/components/molecules/LoginForm';
-import { RegisterForm } from '@/components/molecules/RegisterForm';
-import { StyleAuthScreen } from '@/constants/estilosAuth';
-import { useAuth } from '@/contexts/AuthContext';
+import { LoginForm } from '@/src/components/molecules/LoginForm';
+import { RegisterForm } from '@/src/components/molecules/RegisterForm';
+import { StyleAuthScreen } from '@/src/constants/estilosAuth';
+import { useAuth } from '@/src/contexts/AuthContext';
 
 export const AuthContainer = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -49,12 +49,6 @@ export const AuthContainer = () => {
             </TouchableOpacity>
           </Text>
         </View>
-
-        {isLogin && (
-          <Text style={[StyleAuthScreen.switchText, { marginTop: 30, fontSize: 12, color: '#999' }]}>
-            💡 Cuenta demo: demo@mail.com / demo123
-          </Text>
-        )}
       </ScrollView>
     </KeyboardAvoidingView>
   );

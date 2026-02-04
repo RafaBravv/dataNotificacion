@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
-import { AuthInput } from '@/components/atoms/AuthInput';
-import { AuthButton } from '@/components/atoms/AuthButton';
-import { PlaceHolderStyle, StyleAuthForm } from '@/constants/estilosAuth';
-import { AuthCredentials } from '@/types/authTypes';
+import { AuthInput } from '@/src/components/atoms/AuthInput';
+import { AuthButton } from '@/src/components/atoms/AuthButton';
+import { PlaceHolderStyle, StyleAuthForm } from '@/src/constants/estilosAuth';
+import { AuthCredentials } from '@/src/types/authTypes';
 
 interface LoginFormProps {
   onSubmit: (credentials: AuthCredentials) => Promise<void>;
@@ -14,8 +14,8 @@ interface LoginFormProps {
 }
 
 export const LoginForm = ({ onSubmit, isLoading }: LoginFormProps) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('demo@mail.com');
+  const [password, setPassword] = useState('demo123');
   const [error, setError] = useState('');
 
   const handleSubmit = async () => {

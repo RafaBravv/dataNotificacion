@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 import { View, Text, TextInput, TextInputProps, TouchableOpacity } from 'react-native';
-import { StyleInput } from '@/constants/estilosAuth';
+import { StyleInput } from '@/src/constants/estilosAuth';
 
 interface AuthInputProps extends TextInputProps {
   label: string;

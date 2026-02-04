@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
-import { AuthInput } from '@/components/atoms/AuthInput';
-import { AuthButton } from '@/components/atoms/AuthButton';
-import { PlaceHolderStyle, StyleAuthForm } from '@/constants/estilosAuth';
-import { RegisterCredentials } from '@/types/authTypes';
+import { AuthInput } from '@/src/components/atoms/AuthInput';
+import { AuthButton } from '@/src/components/atoms/AuthButton';
+import { PlaceHolderStyle, StyleAuthForm } from '@/src/constants/estilosAuth';
+import { RegisterCredentials } from '@/src/types/authTypes';
 
 interface RegisterFormProps {
   onSubmit: (credentials: RegisterCredentials) => Promise<void>;
